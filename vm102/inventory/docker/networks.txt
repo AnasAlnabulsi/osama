@@ -1,0 +1,10 @@
+NETWORK ID     NAME                DRIVER    SCOPE
+a72132207677   bridge              bridge    local
+cb8f4741a5ac   collabora_default   bridge    local
+f98ab725ce66   compose_internal    bridge    local
+169f25f97f05   host                host      local
+fbdbd3050e9c   mariadb_default     bridge    local
+4247bf964b51   nextcloud_default   bridge    local
+865269b7f453   none                null      local
+25e5d715d8ef   redis_default       bridge    local
+9814f39d29ef   reverse_proxy_net   bridge    local

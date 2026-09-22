@@ -1,0 +1,12 @@
+[Install]
+WantedBy=multi-user.target
+
+[Mount]
+Options=defaults
+Type=ext4
+What=/dev/disk/by-uuid/75224d56-fa8b-4e51-9a08-32ffc2c9fda7
+Where=/mnt/pve/Backup_Extern_SSD
+
+[Unit]
+Description=Mount storage 'Backup_Extern_SSD' under /mnt/pve
+

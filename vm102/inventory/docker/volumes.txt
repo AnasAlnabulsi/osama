@@ -1,0 +1,4 @@
+DRIVER    VOLUME NAME
+local     mariadb_mariadb_data
+local     nextcloud_nextcloud_html
+local     redis_redis_data

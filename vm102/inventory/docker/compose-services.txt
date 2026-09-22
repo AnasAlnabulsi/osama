@@ -1,0 +1,5 @@
+collabora
+mariadb
+redis
+nextcloud
+proxy

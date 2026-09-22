@@ -1,0 +1,96 @@
+services:
+  mariadb:
+    image: mariadb:11.4
+    container_name: mariadb
+    restart: unless-stopped
+    command:
+      - --transaction-isolation=READ-COMMITTED
+      - --binlog-format=ROW
+      - --innodb-file-per-table=1
+      - --skip-innodb-read-only-compressed
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      TZ: ${TZ}
+    volumes:
+      - /docker/mariadb/data:/var/lib/mysql
+      - /docker/mariadb/backup:/backup
+      - /docker/mariadb/conf.d:/etc/mysql/conf.d
+    networks:
+      - internal
+
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+    volumes:
+      - /docker/redis:/data
+    networks:
+      - internal
+
+  nextcloud:
+    image: nextcloud:35-apache
+    container_name: nextcloud
+    restart: unless-stopped
+    depends_on:
+      - mariadb
+      - redis
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_HOST: mariadb
+      REDIS_HOST: redis
+      TZ: ${TZ}
+    volumes:
+      - /docker/nextcloud/app:/var/www/html
+      - /docker/nextcloud/data:/var/www/html/data
+      - /docker/nextcloud/config:/var/www/html/config
+    networks:
+      - internal
+
+  collabora:
+    image: collabora/code:latest
+    container_name: collabora
+    restart: unless-stopped
+    privileged: true
+    cap_add:
+      - MKNOD
+      - SYS_ADMIN
+    security_opt:
+      - seccomp=unconfined
+    environment:
+      - domain=nextcloud\\.barye\\.cloudns\\.asia|nextcloud\\.hhc\\.cloudns\\.asia
+      - username=${COLLABORA_USERNAME}
+      - password=${COLLABORA_PASSWORD}
+      - extra_params=--o:ssl.enable=false --o:ssl.termination=true --o:num_prespawn_children=4 --o:mount_jail_tree=true --o:per_document.max_concurrency=4
+      - TZ=${TZ}
+    ports:
+      - "127.0.0.1:9980:9980"
+    shm_size: "512m"
+    networks:
+      - internal
+
+  proxy:
+    image: httpd:2.4
+    container_name: proxy
+    restart: unless-stopped
+    depends_on:
+      - nextcloud
+      - collabora
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /docker/proxy/apache2/sites:/usr/local/apache2/conf/extra/sites
+      - /docker/proxy/letsencrypt:/etc/letsencrypt
+      - /docker/proxy/httpd.conf:/usr/local/apache2/conf/httpd.conf
+    networks:
+      - internal
+
+networks:
+  internal:
+    driver: bridge

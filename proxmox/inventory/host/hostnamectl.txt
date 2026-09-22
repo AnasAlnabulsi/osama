@@ -1,0 +1,16 @@
+# COMMAND: hostnamectl
+ Static hostname: pve
+       Icon name: computer-desktop
+         Chassis: desktop 🖥️
+      Machine ID: b08889d1bdf7436ca381bba3358bddbe
+         Boot ID: 97b69eba10024eab8a53c3ef814e747c
+    Product UUID: b43f3174-34a0-11e7-818c-03c6a30180be
+Operating System: Debian GNU/Linux 13 (trixie)
+          Kernel: Linux 7.0.14-19-pve
+    Architecture: x86-64
+ Hardware Vendor: Hewlett-Packard
+  Hardware Model: HP Z440 Workstation
+ Hardware Serial: CZC6038C81
+Firmware Version: M60 v02.54
+   Firmware Date: Fri 2020-06-12
+    Firmware Age: 6y 3month 1w 3d

@@ -1,0 +1,9 @@
+12K	/docker/collabora
+16K	/docker/compose
+16K	/docker/lost+found
+1,5M	/docker/proxy
+34M	/docker/redis
+43M	/docker/backups
+752M	/docker/mariadb
+129G	/docker/nextcloud
+130G	/docker

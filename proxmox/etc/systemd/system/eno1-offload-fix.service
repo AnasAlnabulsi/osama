@@ -1,0 +1,12 @@
+[Unit]
+Description=Disable problematic offloading on Intel I218-LM
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/ethtool -K eno1 tso off gso off gro off
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

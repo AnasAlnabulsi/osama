@@ -1,0 +1,5 @@
+# /etc/fstab: static file system information.
+UUID=0ab9dfb5-6e77-414e-b8af-56b9c700ca15 / ext4 defaults 0 1
+UUID=d63440b3-c2d6-43de-a9ac-43a3312ff0bf /boot ext4 defaults 0 1
+UUID=f2a6c67b-e72b-4817-bcca-a32972af0cf9 /docker ext4 defaults 0 2
+/swap.img none swap sw 0 0

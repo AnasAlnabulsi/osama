@@ -1,0 +1,14 @@
+ Static hostname: dockerstack
+       Icon name: computer-vm
+         Chassis: vm 🖴
+      Machine ID: 9b057be493a640179d7b7526e76f60d0
+         Boot ID: 981e51e31bdc4ec69b9b6d94c726a6bd
+  Virtualization: kvm
+Operating System: Ubuntu 24.04.5 LTS
+          Kernel: Linux 6.8.0-139-generic
+    Architecture: x86-64
+ Hardware Vendor: QEMU
+  Hardware Model: Standard PC _i440FX + PIIX, 1996_
+Firmware Version: rel-1.17.0-0-gb52ca86e094d-prebuilt.qemu.org
+   Firmware Date: Tue 2014-04-01
+    Firmware Age: 12y 5month 3w 1d

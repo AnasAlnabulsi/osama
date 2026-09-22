@@ -1,0 +1,5 @@
+/proxy|bind:/docker/proxy/letsencrypt->/etc/letsencrypt rw=true;bind:/docker/proxy/httpd.conf->/usr/local/apache2/conf/httpd.conf rw=true;bind:/docker/proxy/apache2/sites->/usr/local/apache2/conf/extra/sites rw=true;
+/nextcloud|bind:/docker/nextcloud/app->/var/www/html rw=true;bind:/docker/nextcloud/config->/var/www/html/config rw=true;bind:/docker/nextcloud/data->/var/www/html/data rw=true;
+/redis|bind:/docker/redis->/data rw=true;
+/mariadb|bind:/docker/mariadb/backup->/backup rw=true;bind:/docker/mariadb/conf.d->/etc/mysql/conf.d rw=true;bind:/docker/mariadb/data->/var/lib/mysql rw=true;
+/collabora|

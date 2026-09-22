@@ -1,0 +1,21 @@
+# COMMAND: bash -lc for f in /etc/apt/sources.list /etc/apt/sources.list.d/*; do [ -f "$f" ] || continue; echo "===== $f ====="; cat "$f"; done
+===== /etc/apt/sources.list =====
+deb http://ftp.de.debian.org/debian trixie main contrib non-free-firmware
+
+deb http://ftp.de.debian.org/debian trixie-updates main contrib non-free-firmware
+
+# security updates
+deb http://security.debian.org trixie-security main contrib non-free-firmware
+===== /etc/apt/sources.list.d/pve-enterprise.list =====
+# deb https://enterprise.proxmox.com/debian/pve bullseye pve-enterprise
+
+===== /etc/apt/sources.list.d/pve-enterprise.list.dpkg-dist =====
+deb https://enterprise.proxmox.com/debian/pve bookworm pve-enterprise
+===== /etc/apt/sources.list.d/pve-enterprise.sources.disabled =====
+Types: deb
+URIs: https://enterprise.proxmox.com/debian/pve
+Suites: trixie
+Components: pve-enterprise
+Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg
+===== /etc/apt/sources.list.d/pve-no-subscription.list =====
+deb http://download.proxmox.com/debian/pve trixie pve-no-subscription

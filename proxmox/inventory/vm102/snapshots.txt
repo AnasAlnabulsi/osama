@@ -1,0 +1,3 @@
+# COMMAND: bash -lc qm listsnapshot 102 2>/dev/null || true
+`-> vor_prox_update             2026-07-31 16:39:32     no-description
+ `-> current                                            You are here!

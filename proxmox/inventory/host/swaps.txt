@@ -1,0 +1,3 @@
+# COMMAND: swapon --show
+NAME      TYPE      SIZE USED PRIO
+/dev/dm-0 partition   8G   0B   -1

@@ -1,0 +1,7 @@
+# COMMAND: pvesm status
+Name                     Type     Status     Total (KiB)      Used (KiB) Available (KiB)        %
+Backup                    dir     active       514937088       141835372       346870932   27.54%
+Backup_Extern_SSD         dir     active       960302076        79682608       831765044    8.30%
+SSD-2T                zfspool     active      1381761024       738322059       643438964   53.43%
+SSD1                  lvmthin     active       335646720        39237101       296409618   11.69%
+local                     dir     active        98497780        11692240        81755992   11.87%

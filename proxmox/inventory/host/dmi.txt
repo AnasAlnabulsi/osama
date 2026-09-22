@@ -1,0 +1,217 @@
+# COMMAND: bash -lc command -v dmidecode >/dev/null && { dmidecode -t system; dmidecode -t baseboard; dmidecode -t memory; }
+# dmidecode 3.6
+Getting SMBIOS data from sysfs.
+SMBIOS 2.8 present.
+
+Handle 0x0001, DMI type 1, 27 bytes
+System Information
+	Manufacturer: Hewlett-Packard
+	Product Name: HP Z440 Workstation
+	Version: Not Specified
+	Serial Number: CZC6038C81
+	UUID: b43f3174-34a0-11e7-818c-03c6a30180be
+	Wake-up Type: Power Switch
+	SKU Number: F5W13AV
+	Family: 103C_53335X G=D
+
+Handle 0x0006, DMI type 32, 11 bytes
+System Boot Information
+	Status: No errors detected
+
+# dmidecode 3.6
+Getting SMBIOS data from sysfs.
+SMBIOS 2.8 present.
+
+Handle 0x0002, DMI type 2, 17 bytes
+Base Board Information
+	Manufacturer: Hewlett-Packard
+	Product Name: 212B
+	Version: 1.01
+	Serial Number:  
+	Asset Tag:  
+	Features:
+		Board is a hosting board
+		Board is removable
+		Board is replaceable
+	Location In Chassis: Not Specified
+	Chassis Handle: 0x0003
+	Type: Motherboard
+	Contained Object Handles: 0
+
+Handle 0x003F, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: HD Audio
+	Type: Sound
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:00:1b.0
+
+Handle 0x0040, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: LAN (AMT)
+	Type: Ethernet
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:00:19.0
+
+Handle 0x0041, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: sSATA
+	Type: SATA Controller
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:00:11.4
+
+Handle 0x0042, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation: SATA
+	Type: SATA Controller
+	Status: Enabled
+	Type Instance: 2
+	Bus Address: 0000:00:1f.2
+
+# dmidecode 3.6
+Getting SMBIOS data from sysfs.
+SMBIOS 2.8 present.
+
+Handle 0x0007, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: Multi-bit ECC
+	Maximum Capacity: 512 GB
+	Error Information Handle: Not Provided
+	Number Of Devices: 8
+
+Handle 0x000A, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0007
+	Error Information Handle: Not Provided
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 16 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU0-DIMM1
+	Bank Locator: CPU0
+	Type: DDR4
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 2133 MT/s
+	Manufacturer: Samsung
+	Serial Number: 028C7BE1
+	Asset Tag: Not Specified
+	Part Number: M393A2G40DB0-CPB
+	Rank: 2
+	Configured Memory Speed: 2133 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+
+Handle 0x000C, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0007
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU0-DIMM2
+	Bank Locator: CPU0
+	Type: DDR4
+	Type Detail: None
+
+Handle 0x000D, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0007
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU0-DIMM3
+	Bank Locator: CPU0
+	Type: DDR4
+	Type Detail: None
+
+Handle 0x000E, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0007
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU0-DIMM4
+	Bank Locator: CPU0
+	Type: DDR4
+	Type Detail: None
+
+Handle 0x000F, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0007
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU0-DIMM5
+	Bank Locator: CPU0
+	Type: DDR4
+	Type Detail: None
+
+Handle 0x0010, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0007
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU0-DIMM6
+	Bank Locator: CPU0
+	Type: DDR4
+	Type Detail: None
+
+Handle 0x0011, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0007
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU0-DIMM7
+	Bank Locator: CPU0
+	Type: DDR4
+	Type Detail: None
+
+Handle 0x0012, DMI type 17, 40 bytes
+Memory Device
+	Array Handle: 0x0007
+	Error Information Handle: Not Provided
+	Total Width: 72 bits
+	Data Width: 64 bits
+	Size: 16 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: CPU0-DIMM8
+	Bank Locator: CPU0
+	Type: DDR4
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 2133 MT/s
+	Manufacturer: Samsung
+	Serial Number: 028BEEA1
+	Asset Tag: Not Specified
+	Part Number: M393A2G40DB0-CPB
+	Rank: 2
+	Configured Memory Speed: 2133 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: Unknown
+

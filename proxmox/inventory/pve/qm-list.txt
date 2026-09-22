@@ -1,0 +1,3 @@
+# COMMAND: qm list
+      VMID NAME                 STATUS     MEM(MB)    BOOTDISK(GB) PID       
+       102 DockerStack          running    16384             60.00 1618      

@@ -1,0 +1,1 @@
+# COMMAND: bash -lc find /etc/network/interfaces.d -maxdepth 2 -type f -print -exec sh -c 'echo "--- $1"; cat "$1"' _ {} \; 2>/dev/null

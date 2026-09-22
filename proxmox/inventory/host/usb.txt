@@ -1,0 +1,12 @@
+# COMMAND: bash -lc command -v lsusb >/dev/null && lsusb
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 001 Device 002: ID 8087:8002 Intel Corp. 8 channel internal hub
+Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 002: ID 8087:800a Intel Corp. Hub
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 003 Device 002: ID 24ae:1813 Shenzhen Rapoo Technology Co., Ltd. E9260 Wireless Multi-mode Keyboard
+Bus 003 Device 003: ID 17ef:608c Lenovo Lenovo Calliope USB Keyboard
+Bus 003 Device 004: ID 0451:8142 Texas Instruments, Inc. TUSB8041 4-Port Hub
+Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 004 Device 002: ID 0451:8140 Texas Instruments, Inc. TUSB8041 4-Port Hub
+Bus 004 Device 003: ID 0781:558c SanDisk Corp. Extreme Portable SSD

@@ -1,0 +1,25 @@
+# COMMAND: bash -lc pvs -a -o+devices 2>/dev/null; echo; vgs -a 2>/dev/null; echo; lvs -a -o+devices 2>/dev/null
+  PV         VG  Fmt  Attr PSize    PFree  Devices          
+  /dev/sda2           ---        0      0                   
+  /dev/sda3  pve lvm2 a--  <446.63g 15.99g /dev/sda3(0)     
+  /dev/sda3  pve lvm2 a--  <446.63g 15.99g /dev/sda3(2048)  
+  /dev/sda3  pve lvm2 a--  <446.63g 15.99g /dev/sda3(26624) 
+  /dev/sda3  pve lvm2 a--  <446.63g 15.99g /dev/sda3(108569)
+  /dev/sda3  pve lvm2 a--  <446.63g 15.99g /dev/sda3(109406)
+  /dev/sda3  pve lvm2 a--  <446.63g 15.99g                  
+  /dev/sdb1           ---        0      0                   
+  /dev/sdb2           ---        0      0                   
+  /dev/sdc1           ---        0      0                   
+
+  VG  #PV #LV #SN Attr   VSize    VFree 
+  pve   1   5   0 wz--n- <446.63g 15.99g
+
+  LV                                 VG  Attr       LSize    Pool Origin        Data%  Meta%  Move Log Cpy%Sync Convert Devices          
+  data                               pve twi-aotz-- <320.10g                    11.69  0.94                             data_tdata(0)    
+  [data_tdata]                       pve Twi-ao---- <320.10g                                                            /dev/sda3(26624) 
+  [data_tmeta]                       pve ewi-ao----   <3.27g                                                            /dev/sda3(108569)
+  [lvol0_pmspare]                    pve ewi-------   <3.27g                                                            /dev/sda3(109406)
+  root                               pve -wi-ao----   96.00g                                                            /dev/sda3(2048)  
+  snap_vm-102-disk-0_vor_prox_update pve Vri---tz-k   60.00g data vm-102-disk-0                                                          
+  swap                               pve -wi-ao----    8.00g                                                            /dev/sda3(0)     
+  vm-102-disk-0                      pve Vwi-aotz--   60.00g data               50.58                                                    

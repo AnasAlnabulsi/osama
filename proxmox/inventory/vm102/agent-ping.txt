@@ -1,0 +1,1 @@
+# COMMAND: bash -lc qm guest cmd 102 ping 2>/dev/null || true

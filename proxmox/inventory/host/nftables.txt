@@ -1,0 +1,1 @@
+# COMMAND: bash -lc nft list ruleset 2>/dev/null || true

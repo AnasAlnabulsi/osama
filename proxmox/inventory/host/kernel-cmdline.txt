@@ -1,0 +1,2 @@
+# COMMAND: cat /proc/cmdline
+BOOT_IMAGE=/boot/vmlinuz-7.0.14-19-pve root=/dev/mapper/pve-root ro quiet

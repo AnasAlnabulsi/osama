@@ -1,0 +1,1 @@
+# COMMAND: bash -lc pvecm status 2>/dev/null || true

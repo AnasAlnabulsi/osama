@@ -1,0 +1,38 @@
+# COMMAND: ss -lntup
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                                                                                                                   
+udp   UNCONN 0      0            0.0.0.0:47158      0.0.0.0:*                                                                                                                                             
+udp   UNCONN 0      0            0.0.0.0:49188      0.0.0.0:*    users:(("rpc.mountd",pid=1327,fd=12))                                                                                                    
+udp   UNCONN 0      0            0.0.0.0:111        0.0.0.0:*    users:(("rpcbind",pid=988,fd=5),("systemd",pid=1,fd=44))                                                                                 
+udp   UNCONN 0      0          127.0.0.1:323        0.0.0.0:*    users:(("chronyd",pid=1095,fd=4))                                                                                                        
+udp   UNCONN 0      0          127.0.0.1:662        0.0.0.0:*    users:(("rpc.statd",pid=1334,fd=5))                                                                                                      
+udp   UNCONN 0      0            0.0.0.0:34182      0.0.0.0:*    users:(("rpc.statd",pid=1334,fd=8))                                                                                                      
+udp   UNCONN 0      0            0.0.0.0:39345      0.0.0.0:*    users:(("rpc.mountd",pid=1327,fd=8))                                                                                                     
+udp   UNCONN 0      0            0.0.0.0:46811      0.0.0.0:*    users:(("rpc.mountd",pid=1327,fd=4))                                                                                                     
+udp   UNCONN 0      0               [::]:111           [::]:*    users:(("rpcbind",pid=988,fd=7),("systemd",pid=1,fd=46))                                                                                 
+udp   UNCONN 0      0              [::1]:323           [::]:*    users:(("chronyd",pid=1095,fd=5))                                                                                                        
+udp   UNCONN 0      0               [::]:34850         [::]:*    users:(("rpc.mountd",pid=1327,fd=6))                                                                                                     
+udp   UNCONN 0      0               [::]:38089         [::]:*    users:(("rpc.mountd",pid=1327,fd=14))                                                                                                    
+udp   UNCONN 0      0               [::]:55780         [::]:*                                                                                                                                             
+udp   UNCONN 0      0               [::]:59601         [::]:*    users:(("rpc.statd",pid=1334,fd=10))                                                                                                     
+udp   UNCONN 0      0               [::]:59788         [::]:*    users:(("rpc.mountd",pid=1327,fd=10))                                                                                                    
+tcp   LISTEN 0      4096         0.0.0.0:42325      0.0.0.0:*    users:(("rpc.mountd",pid=1327,fd=9))                                                                                                     
+tcp   LISTEN 0      4096         0.0.0.0:47447      0.0.0.0:*    users:(("rpc.statd",pid=1334,fd=9))                                                                                                      
+tcp   LISTEN 0      4096         0.0.0.0:46211      0.0.0.0:*    users:(("rpc.mountd",pid=1327,fd=5))                                                                                                     
+tcp   LISTEN 0      4096         0.0.0.0:2049       0.0.0.0:*                                                                                                                                             
+tcp   LISTEN 0      128          0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=1348,fd=6))                                                                                                           
+tcp   LISTEN 0      4096         0.0.0.0:111        0.0.0.0:*    users:(("rpcbind",pid=988,fd=4),("systemd",pid=1,fd=43))                                                                                 
+tcp   LISTEN 0      4096         0.0.0.0:34395      0.0.0.0:*    users:(("rpc.mountd",pid=1327,fd=13))                                                                                                    
+tcp   LISTEN 0      4096         0.0.0.0:40395      0.0.0.0:*                                                                                                                                             
+tcp   LISTEN 0      100        127.0.0.1:25         0.0.0.0:*    users:(("master",pid=1487,fd=13))                                                                                                        
+tcp   LISTEN 0      4096       127.0.0.1:85         0.0.0.0:*    users:(("pvedaemon worke",pid=1546,fd=6),("pvedaemon worke",pid=1545,fd=6),("pvedaemon worke",pid=1544,fd=6),("pvedaemon",pid=1543,fd=6))
+tcp   LISTEN 0      100            [::1]:25            [::]:*    users:(("master",pid=1487,fd=14))                                                                                                        
+tcp   LISTEN 0      4096            [::]:46895         [::]:*    users:(("rpc.mountd",pid=1327,fd=7))                                                                                                     
+tcp   LISTEN 0      4096            [::]:2049          [::]:*                                                                                                                                             
+tcp   LISTEN 0      4096               *:3128             *:*    users:(("spiceproxy work",pid=1596,fd=6),("spiceproxy",pid=1595,fd=6))                                                                   
+tcp   LISTEN 0      128             [::]:22            [::]:*    users:(("sshd",pid=1348,fd=7))                                                                                                           
+tcp   LISTEN 0      4096            [::]:111           [::]:*    users:(("rpcbind",pid=988,fd=6),("systemd",pid=1,fd=45))                                                                                 
+tcp   LISTEN 0      4096            [::]:55333         [::]:*    users:(("rpc.mountd",pid=1327,fd=15))                                                                                                    
+tcp   LISTEN 0      4096               *:8006             *:*    users:(("pveproxy worker",pid=1589,fd=6),("pveproxy worker",pid=1588,fd=6),("pveproxy worker",pid=1587,fd=6),("pveproxy",pid=1586,fd=6)) 
+tcp   LISTEN 0      4096            [::]:37291         [::]:*    users:(("rpc.mountd",pid=1327,fd=11))                                                                                                    
+tcp   LISTEN 0      4096            [::]:53749         [::]:*    users:(("rpc.statd",pid=1334,fd=11))                                                                                                     
+tcp   LISTEN 0      4096            [::]:38553         [::]:*                                                                                                                                             

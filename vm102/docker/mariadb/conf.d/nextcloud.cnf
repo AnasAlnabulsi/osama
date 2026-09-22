@@ -1,0 +1,8 @@
+[mariadb]
+
+# Nextcloud DB recommendations
+slow_query_log = ON
+long_query_time = 2
+
+# InnoDB
+innodb_log_file_size = 256M

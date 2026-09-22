@@ -1,0 +1,1 @@
+# COMMAND: bash -lc find /etc/pve/firewall -maxdepth 2 -type f -print -exec sh -c 'echo "--- $1"; cat "$1"' _ {} \; 2>/dev/null; test -f /etc/pve/firewall/cluster.fw && cat /etc/pve/firewall/cluster.fw

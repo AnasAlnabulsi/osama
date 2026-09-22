@@ -1,0 +1,2 @@
+# COMMAND: bash -lc cat /etc/pve/datacenter.cfg 2>/dev/null
+keyboard: de

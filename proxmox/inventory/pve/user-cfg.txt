@@ -1,0 +1,2 @@
+# COMMAND: bash -lc cat /etc/pve/user.cfg 2>/dev/null
+user:root@pam:1:0:::REDACTED_EMAIL::

@@ -1,0 +1,17 @@
+# COMMAND: df -hT
+Filesystem           Type      Size  Used Avail Use% Mounted on
+udev                 devtmpfs   15G     0   15G   0% /dev
+tmpfs                tmpfs     3.2G  2.4M  3.2G   1% /run
+/dev/mapper/pve-root ext4       94G   12G   78G  13% /
+tmpfs                tmpfs      16G   43M   16G   1% /dev/shm
+efivarfs             efivarfs  120K   90K   26K  78% /sys/firmware/efi/efivars
+tmpfs                tmpfs     5.0M     0  5.0M   0% /run/lock
+tmpfs                tmpfs     1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs                tmpfs      16G     0   16G   0% /tmp
+/dev/sda2            vfat      511M  352K  511M   1% /boot/efi
+/dev/sdc1            ext4      916G   76G  794G   9% /mnt/pve/Backup_Extern_SSD
+/dev/sdb1            ext4      492G  136G  331G  30% /mnt/backup
+SSD-2T               zfs       614G  128K  614G   1% /mnt/zfspool
+/dev/fuse            fuse      128M   20K  128M   1% /etc/pve
+tmpfs                tmpfs     1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs                tmpfs     3.2G  8.0K  3.2G   1% /run/user/0

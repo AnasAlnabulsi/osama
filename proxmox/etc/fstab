@@ -1,0 +1,8 @@
+# <file system> <mount point> <type> <options> <dump> <pass>
+/dev/pve/root / ext4 errors=remount-ro 0 1
+/dev/pve/swap none swap sw 0 0
+proc /proc proc defaults 0 0
+/dev/sdb1    /mnt/backup    ext4    defaults    0    2
+# Falls der ZFS-Pool gemountet werden soll:
+# meinPoolName /mnt/zfspool  zfs     defaults    0    0
+UUID=FBB2-B05C /boot/efi vfat defaults 0 1

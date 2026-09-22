@@ -1,0 +1,31 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Runtime / backups / user data
+*.sql
+*.sql.gz
+*.dump
+*.log
+*.tar
+*.tar.gz
+*.7z
+*.zip
+docker/nextcloud/data/
+docker/mariadb/data/
+docker/mariadb/backup/
+docker/redis/
+docker/proxy/letsencrypt/archive/
+docker/proxy/letsencrypt/live/
+
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

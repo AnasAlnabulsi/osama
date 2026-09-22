@@ -1,0 +1,14 @@
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+ens18            UP             192.168.178.171/24 metric 100 fdfa:a74e:a1fd:0:88d1:47ff:fe9e:2e85/64 2003:93:8214:4b00:88d1:47ff:fe9e:2e85/64 fe80::88d1:47ff:fe9e:2e85/64 
+br-4247bf964b51  DOWN           172.19.0.1/16 
+br-9814f39d29ef  DOWN           172.18.0.1/16 
+br-cb8f4741a5ac  DOWN           172.22.0.1/16 
+br-fbdbd3050e9c  DOWN           172.20.0.1/16 
+docker0          DOWN           172.17.0.1/16 
+br-25e5d715d8ef  DOWN           172.21.0.1/16 
+br-f98ab725ce66  UP             172.23.0.1/16 fe80::9c03:beff:fe64:7c5b/64 
+veth5c23660@if2  UP             fe80::fce9:e8ff:fe94:99e0/64 
+vethd8b6133@if2  UP             fe80::6f:85ff:fee4:2d9f/64 
+vethc5e484a@if2  UP             fe80::188d:6ff:feaf:ab92/64 
+vethe08adec@if2  UP             fe80::98e9:3dff:fea2:ff35/64 
+veth11f8aec@if2  UP             fe80::68ce:c6ff:fecb:312c/64 

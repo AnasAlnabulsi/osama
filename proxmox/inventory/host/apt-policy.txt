@@ -1,0 +1,29 @@
+# COMMAND: apt-cache policy
+Package files:
+ 100 /var/lib/dpkg/status
+     release a=now
+ 500 http://download.proxmox.com/debian/pve trixie/pve-no-subscription amd64 Packages
+     release o=Proxmox,a=stable,n=trixie,l=Proxmox Debian Repository,c=pve-no-subscription,b=amd64
+     origin download.proxmox.com
+ 500 http://security.debian.org trixie-security/non-free-firmware amd64 Packages
+     release v=13,o=Debian,a=stable-security,n=trixie-security,l=Debian-Security,c=non-free-firmware,b=amd64
+     origin security.debian.org
+ 500 http://security.debian.org trixie-security/contrib amd64 Packages
+     release v=13,o=Debian,a=stable-security,n=trixie-security,l=Debian-Security,c=contrib,b=amd64
+     origin security.debian.org
+ 500 http://security.debian.org trixie-security/main amd64 Packages
+     release v=13,o=Debian,a=stable-security,n=trixie-security,l=Debian-Security,c=main,b=amd64
+     origin security.debian.org
+ 500 http://ftp.de.debian.org/debian trixie-updates/main amd64 Packages
+     release v=13-updates,o=Debian,a=stable-updates,n=trixie-updates,l=Debian,c=main,b=amd64
+     origin ftp.de.debian.org
+ 500 http://ftp.de.debian.org/debian trixie/non-free-firmware amd64 Packages
+     release v=13.7,o=Debian,a=stable,n=trixie,l=Debian,c=non-free-firmware,b=amd64
+     origin ftp.de.debian.org
+ 500 http://ftp.de.debian.org/debian trixie/contrib amd64 Packages
+     release v=13.7,o=Debian,a=stable,n=trixie,l=Debian,c=contrib,b=amd64
+     origin ftp.de.debian.org
+ 500 http://ftp.de.debian.org/debian trixie/main amd64 Packages
+     release v=13.7,o=Debian,a=stable,n=trixie,l=Debian,c=main,b=amd64
+     origin ftp.de.debian.org
+Pinned packages:

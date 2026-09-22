@@ -1,0 +1,126 @@
+# COMMAND: lsmod
+Module                  Size  Used by
+udp_diag               12288  0
+tcp_diag               20480  0
+inet_diag              20480  2 tcp_diag,udp_diag
+veth                   40960  0
+ebtable_filter         12288  0
+ebtables               45056  1 ebtable_filter
+ip_set                 61440  0
+ip6table_raw           12288  0
+iptable_raw            12288  0
+ip6table_filter        12288  0
+ip6_tables             32768  2 ip6table_filter,ip6table_raw
+iptable_filter         12288  0
+scsi_transport_iscsi   172032  1
+nf_tables             372736  0
+bonding               253952  0
+tls                   147456  1 bonding
+softdog                12288  2
+nfnetlink_log          24576  1
+binfmt_misc            24576  1
+intel_rapl_msr         20480  0
+intel_rapl_common      49152  1 intel_rapl_msr
+sb_edac                32768  0
+x86_pkg_temp_thermal    16384  0
+nfsd                 1011712  5
+intel_powerclamp       24576  0
+snd_hda_codec_alc269   147456  1
+nouveau              2969600  0
+snd_hda_codec_realtek_lib    65536  1 snd_hda_codec_alc269
+snd_hda_codec_nvhdmi    16384  1
+snd_hda_scodec_component    20480  1 snd_hda_codec_alc269
+auth_rpcgss           180224  1 nfsd
+snd_hda_codec_hdmi     57344  1 snd_hda_codec_nvhdmi
+snd_hda_codec_generic   102400  2 snd_hda_codec_realtek_lib,snd_hda_codec_alc269
+coretemp               20480  0
+nfs_acl                12288  1 nfsd
+lockd                 147456  1 nfsd
+snd_hda_intel          61440  0
+gpu_sched              69632  1 nouveau
+drm_gpuvm              53248  1 nouveau
+grace                  16384  2 nfsd,lockd
+hp_bioscfg             77824  0
+snd_hda_codec         196608  6 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec_nvhdmi,snd_hda_codec_realtek_lib,snd_hda_codec_alc269
+mxm_wmi                12288  1 nouveau
+kvm_intel             507904  6
+drm_ttm_helper         20480  2 nouveau
+snd_hda_core          139264  6 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek_lib,snd_hda_codec_alc269
+firmware_attributes_class    12288  1 hp_bioscfg
+sunrpc                819200  17 nfsd,auth_rpcgss,lockd,nfs_acl
+sch_fq_codel           28672  3
+ttm                   126976  2 drm_ttm_helper,nouveau
+snd_intel_dspcfg       45056  1 snd_hda_intel
+snd_intel_sdw_acpi     16384  1 snd_intel_dspcfg
+drm_exec               12288  2 drm_gpuvm,nouveau
+kvm                  1445888  5 kvm_intel
+snd_hwdep              24576  1 snd_hda_codec
+drm_display_helper    286720  1 nouveau
+irqbypass              16384  1 kvm
+snd_pcm               188416  4 snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_core
+cec                    98304  1 drm_display_helper
+hp_wmi                 45056  0
+ses                    20480  0
+ghash_clmulni_intel    12288  0
+aesni_intel            94208  0
+snd_timer              53248  1 snd_pcm
+rc_core                73728  1 cec
+enclosure              20480  1 ses
+input_leds             12288  0
+sparse_keymap          12288  1 hp_wmi
+joydev                 28672  0
+mei_me                 57344  0
+rapl                   20480  0
+i2c_algo_bit           16384  1 nouveau
+snd                   135168  9 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_timer,snd_hda_codec_realtek_lib,snd_hda_codec_alc269,snd_pcm
+video                  77824  1 nouveau
+platform_profile       20480  1 hp_wmi
+pcspkr                 12288  0
+intel_cstate           20480  0
+wmi_bmof               12288  0
+soundcore              16384  1 snd
+mei                   180224  1 mei_me
+scsi_transport_sas     53248  1 ses
+mac_hid                12288  0
+zfs                  6262784  8
+spl                   151552  1 zfs
+msr                    12288  0
+vhost_net              36864  1
+vhost                  69632  1 vhost_net
+vhost_iotlb            16384  1 vhost
+tap                    32768  1 vhost_net
+efi_pstore             12288  0
+nfnetlink              20480  5 nf_tables,ip_set,nfnetlink_log
+dmi_sysfs              20480  0
+ip_tables              32768  2 iptable_filter,iptable_raw
+x_tables               65536  7 ebtables,ip6table_filter,ip6table_raw,iptable_filter,ip6_tables,iptable_raw,ip_tables
+autofs4                57344  2
+btrfs                2162688  0
+libblake2b             20480  1 btrfs
+xor                    24576  1 btrfs
+raid6_pq              122880  1 btrfs
+uas                    28672  1
+usb_storage            86016  1 uas
+dm_thin_pool           94208  2
+dm_persistent_data    118784  1 dm_thin_pool
+dm_bio_prison          24576  1 dm_thin_pool
+dm_bufio               57344  1 dm_persistent_data
+hid_generic            12288  0
+usbkbd                 12288  0
+usbmouse               12288  0
+usbhid                 77824  0
+hid                   266240  2 usbhid,hid_generic
+psmouse               208896  0
+ahci                   49152  7
+xhci_pci               24576  0
+serio_raw              20480  0
+i2c_i801               36864  0
+ehci_pci               16384  0
+i2c_mux                20480  1 i2c_i801
+lpc_ich                28672  0
+i2c_smbus              20480  1 i2c_i801
+xhci_hcd              409600  1 xhci_pci
+libahci                53248  1 ahci
+e1000e                356352  0
+ehci_hcd              102400  1 ehci_pci
+wmi                    32768  6 hp_wmi,video,hp_bioscfg,wmi_bmof,mxm_wmi,nouveau

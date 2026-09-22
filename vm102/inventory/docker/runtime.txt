@@ -1,0 +1,5 @@
+/proxy|restart=unless-stopped|image=httpd:2.4
+/nextcloud|restart=unless-stopped|image=nextcloud:35-apache
+/redis|restart=unless-stopped|image=redis:7-alpine
+/mariadb|restart=unless-stopped|image=mariadb:11.4
+/collabora|restart=unless-stopped|image=collabora/code:latest

@@ -1,0 +1,1 @@
+# COMMAND: bash -lc cat /etc/pve/jobs.cfg 2>/dev/null || true

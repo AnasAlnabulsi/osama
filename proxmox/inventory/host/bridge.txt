@@ -1,0 +1,47 @@
+# COMMAND: bash -lc bridge link; echo; bridge vlan show; echo; bridge fdb show
+2: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 master vmbr0 state forwarding priority 32 cost 5 
+4: tap102i0: <BROADCAST,MULTICAST,PROMISC,UP,LOWER_UP> mtu 1500 master fwbr102i0 state forwarding priority 32 cost 2 
+6: fwpr102p0@fwln102i0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 master vmbr0 state forwarding priority 32 cost 2 
+7: fwln102i0@fwpr102p0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 master fwbr102i0 state forwarding priority 32 cost 2 
+
+port              vlan-id  
+eno1              1 PVID Egress Untagged
+vmbr0             1 PVID Egress Untagged
+tap102i0          1 PVID Egress Untagged
+fwbr102i0         1 PVID Egress Untagged
+fwpr102p0         1 PVID Egress Untagged
+fwln102i0         1 PVID Egress Untagged
+
+02:7a:a4:1b:fa:c0 dev eno1 master vmbr0 
+74:42:7f:56:a3:c4 dev eno1 master vmbr0 
+a0:8c:fd:cb:0d:73 dev eno1 vlan 1 master vmbr0 permanent
+a0:8c:fd:cb:0d:73 dev eno1 master vmbr0 permanent
+33:33:00:00:00:01 dev eno1 self permanent
+01:00:5e:00:00:01 dev eno1 self permanent
+33:33:00:00:00:01 dev vmbr0 self permanent
+33:33:00:00:00:02 dev vmbr0 self permanent
+01:00:5e:00:00:6a dev vmbr0 self permanent
+33:33:00:00:00:6a dev vmbr0 self permanent
+01:00:5e:00:00:01 dev vmbr0 self permanent
+33:33:ff:cb:0d:73 dev vmbr0 self permanent
+33:33:ff:00:00:00 dev vmbr0 self permanent
+8a:d1:47:9e:2e:85 dev tap102i0 master fwbr102i0 
+6e:55:22:ef:32:a5 dev tap102i0 vlan 1 master fwbr102i0 permanent
+6e:55:22:ef:32:a5 dev tap102i0 master fwbr102i0 permanent
+33:33:00:00:00:01 dev tap102i0 self permanent
+01:00:5e:00:00:01 dev tap102i0 self permanent
+33:33:00:00:00:01 dev fwbr102i0 self permanent
+01:00:5e:00:00:6a dev fwbr102i0 self permanent
+33:33:00:00:00:6a dev fwbr102i0 self permanent
+01:00:5e:00:00:01 dev fwbr102i0 self permanent
+8a:d1:47:9e:2e:85 dev fwpr102p0 master vmbr0 
+26:f9:00:40:59:7c dev fwpr102p0 vlan 1 master vmbr0 permanent
+26:f9:00:40:59:7c dev fwpr102p0 master vmbr0 permanent
+33:33:00:00:00:01 dev fwpr102p0 self permanent
+01:00:5e:00:00:01 dev fwpr102p0 self permanent
+02:7a:a4:1b:fa:c0 dev fwln102i0 master fwbr102i0 
+74:42:7f:56:a3:c4 dev fwln102i0 master fwbr102i0 
+16:5f:08:8a:b9:63 dev fwln102i0 vlan 1 master fwbr102i0 permanent
+16:5f:08:8a:b9:63 dev fwln102i0 master fwbr102i0 permanent
+33:33:00:00:00:01 dev fwln102i0 self permanent
+01:00:5e:00:00:01 dev fwln102i0 self permanent

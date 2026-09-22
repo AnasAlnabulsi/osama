@@ -1,0 +1,19 @@
+# COMMAND: bash -lc qm pending 102 2>/dev/null || true
+cur agent: 1
+cur boot: order=scsi0;net0
+cur cores: 4
+cur memory: 16384
+cur meta: creation-qemu=6.2.0,ctime=1773468751
+cur name: DockerStack
+cur net0: virtio=8A:D1:47:9E:2E:85,bridge=vmbr0,firewall=1
+cur numa: 0
+cur onboot: 1
+cur ostype: l26
+cur parent: vor_prox_update
+cur scsi0: SSD1:vm-102-disk-0,size=60G
+cur scsi1: SSD-2T:vm-102-disk-0,size=500G
+cur scsihw: virtio-scsi-pci
+cur smbios1: uuid=9b057be4-93a6-4017-9d7b-7526e76f60d0
+cur sockets: 1
+cur startup: order=1,up=30
+cur vmgenid: 1fb17774-bc02-42ea-b8f3-c3990a5ae8d8

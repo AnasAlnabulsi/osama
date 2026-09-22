@@ -1,0 +1,1 @@
+# COMMAND: bash -lc pvesh get /pools 2>/dev/null || true

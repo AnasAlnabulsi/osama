@@ -1,0 +1,6 @@
+# COMMAND: bash -lc zfs list -t filesystem,volume,snapshot -o name,type,used,avail,refer,mountpoint,volsize 2>/dev/null
+NAME                                  TYPE         USED  AVAIL  REFER  MOUNTPOINT    VOLSIZE
+SSD-2T                                filesystem   704G   614G    24K  /mnt/zfspool        -
+SSD-2T/vm-102-disk-0                  volume       671G  1.10T   154G  -                500G
+SSD-2T/vm-102-disk-0@vor_prox_update  snapshot    3.94G      -   155G  -                500G
+SSD-2T/vm-102-state-vor_prox_update   volume      33.5G   639G  7.69G  -               32.5G

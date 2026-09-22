@@ -1,0 +1,11 @@
+# COMMAND: blkid
+/dev/mapper/pve-root: UUID="ac5f8b1e-7a84-43d2-a115-cd44c33a14d9" BLOCK_SIZE="4096" TYPE="ext4"
+/dev/sdb2: LABEL="SSD-2T" UUID="5231858355861408303" UUID_SUB="10558982062116057826" BLOCK_SIZE="512" TYPE="zfs_member" PARTUUID="989fe432-02"
+/dev/sdb1: UUID="913a0360-6681-48bc-9dd7-eaf649ff7d21" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="989fe432-01"
+/dev/mapper/pve-swap: UUID="c95f8cea-1263-486f-9e6b-cb92ebfda6b9" TYPE="swap"
+/dev/sdc1: UUID="75224d56-fa8b-4e51-9a08-32ffc2c9fda7" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="1983969e-cf5a-4507-9e5b-d653843a308c"
+/dev/sda2: UUID="FBB2-B05C" BLOCK_SIZE="512" TYPE="vfat" PARTUUID="29a8b552-2112-4b30-9ac0-d82dce6735f6"
+/dev/sda3: UUID="UX72uk-44Tx-QmO2-QtIr-MfxC-iD04-lCcUtD" TYPE="LVM2_member" PARTUUID="c32a48bc-959c-437b-ae2a-cb98992dbf44"
+/dev/zd0: UUID="f2a6c67b-e72b-4817-bcca-a32972af0cf9" BLOCK_SIZE="4096" TYPE="ext4"
+/dev/mapper/pve-vm--102--disk--0: PTUUID="884404ce-8d65-4dcd-b484-84798b2c0cd8" PTTYPE="gpt"
+/dev/sda1: PARTUUID="91a003f4-2b6a-4374-8fab-e46591c63671"

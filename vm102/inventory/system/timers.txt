@@ -1,0 +1,21 @@
+NEXT                                  LEFT LAST                               PASSED UNIT                           ACTIVATES
+Tue 2026-09-22 19:20:00 CEST          5min Tue 2026-09-22 19:10:01 CEST  4min 1s ago sysstat-collect.timer          sysstat-collect.service
+Tue 2026-09-22 19:37:57 CEST         23min Tue 2026-09-22 18:15:01 CEST    59min ago fwupd-refresh.timer            fwupd-refresh.service
+Wed 2026-09-23 00:00:00 CEST      4h 45min Tue 2026-09-22 15:17:40 CEST            - dpkg-db-backup.timer           dpkg-db-backup.service
+Wed 2026-09-23 00:00:00 CEST      4h 45min Tue 2026-09-22 15:17:40 CEST            - logrotate.timer                logrotate.service
+Wed 2026-09-23 00:07:00 CEST      4h 52min -                                       - sysstat-summary.timer          sysstat-summary.service
+Wed 2026-09-23 03:46:08 CEST            8h Tue 2026-09-22 16:40:25 CEST            - certbot.timer                  certbot.service
+Wed 2026-09-23 04:03:36 CEST            8h Tue 2026-09-22 16:40:09 CEST            - motd-news.timer                motd-news.service
+Wed 2026-09-23 06:00:23 CEST           10h Tue 2026-09-22 16:21:36 CEST            - apt-daily-upgrade.timer        apt-daily-upgrade.service
+Wed 2026-09-23 10:49:01 CEST           15h Tue 2026-09-22 16:37:57 CEST            - man-db.timer                   man-db.service
+Wed 2026-09-23 15:47:13 CEST           20h Tue 2026-09-22 18:55:42 CEST    18min ago apt-daily.timer                apt-daily.service
+Wed 2026-09-23 17:43:52 CEST           22h Tue 2026-09-22 17:43:52 CEST 1h 30min ago update-notifier-download.timer update-notifier-download.service
+Wed 2026-09-23 17:54:02 CEST           22h Tue 2026-09-22 17:54:02 CEST 1h 20min ago systemd-tmpfiles-clean.timer   systemd-tmpfiles-clean.service
+Sun 2026-09-27 03:10:29 CEST        4 days Tue 2026-09-22 15:18:09 CEST            - e2scrub_all.timer              e2scrub_all.service
+Mon 2026-09-28 00:45:03 CEST        5 days Tue 2026-09-22 16:37:57 CEST            - fstrim.timer                   fstrim.service
+Sat 2026-10-03 06:10:55 CEST 1 week 3 days Tue 2026-09-22 16:40:29 CEST            - update-notifier-motd.timer     update-notifier-motd.service
+-                                        - -                                       - apport-autoreport.timer        apport-autoreport.service
+-                                        - -                                       - snapd.snap-repair.timer        snapd.snap-repair.service
+-                                        - -                                       - ua-timer.timer                 ua-timer.service
+
+18 timers listed.
