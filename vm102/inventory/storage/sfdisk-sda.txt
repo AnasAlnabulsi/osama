@@ -1,0 +1,12 @@
+# COMMAND: sfdisk --dump /dev/sda
+label: gpt
+label-id: 884404CE-8D65-4DCD-B484-84798B2C0CD8
+device: /dev/sda
+unit: sectors
+first-lba: 34
+last-lba: 125829086
+sector-size: 512
+
+/dev/sda1 : start=        2048, size=        2048, type=21686148-6449-6E6F-744E-656564454649, uuid=B642569B-E326-439F-8BD8-226583F8D411
+/dev/sda2 : start=        4096, size=     4194304, type=0FC63DAF-8483-4772-8E79-3D69D8477DE4, uuid=C3ACAD43-0192-401E-9419-EC95CB8F13A2
+/dev/sda3 : start=     4198400, size=   121630687, type=0FC63DAF-8483-4772-8E79-3D69D8477DE4, uuid=45DA480C-861C-4299-9CFB-941F538BD088

@@ -1,0 +1,2 @@
+# COMMAND: sfdisk --dump /dev/sdb
+sfdisk: /dev/sdb: does not contain a recognized partition table

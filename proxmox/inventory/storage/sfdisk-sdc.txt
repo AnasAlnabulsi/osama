@@ -1,0 +1,10 @@
+# COMMAND: sfdisk --dump /dev/sdc
+label: gpt
+label-id: 65F2DFF6-D48D-4002-BDA8-94D100083882
+device: /dev/sdc
+unit: sectors
+first-lba: 34
+last-lba: 1953523678
+sector-size: 512
+
+/dev/sdc1 : start=        2048, size=  1953521631, type=0FC63DAF-8483-4772-8E79-3D69D8477DE4, uuid=1983969E-CF5A-4507-9E5B-D653843A308C

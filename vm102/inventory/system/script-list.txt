@@ -1,0 +1,4 @@
+/root/nextcloud-major-upgrade.sh	-rwxr-xr-x root:root 5313
+/root/vm102-supplement-20260922-195716/certbot/renewal-hooks/deploy/20-sync-certificates.sh	-rwxr-xr-x root:root 133
+/root/vm102-supplement-20260922-195716/certbot/renewal-hooks/post/30-start-proxy.sh	-rwxr-xr-x root:root 71
+/root/vm102-supplement-20260922-195716/certbot/renewal-hooks/pre/10-stop-proxy.sh	-rwxr-xr-x root:root 103

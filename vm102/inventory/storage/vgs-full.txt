@@ -1,0 +1,3 @@
+# COMMAND: bash -lc vgs -a -o vg_name,vg_uuid,vg_size,vg_free,vg_extent_size,vg_extent_count,vg_free_count 2>/dev/null
+  VG        VG UUID                                VSize   VFree Ext   #Ext  Free
+  ubuntu-vg I3HDIj-DsPg-IDeX-fnPT-ofzV-XN3A-oD3EAY <58,00g    0  4,00m 14847    0

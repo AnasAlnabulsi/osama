@@ -1,0 +1,26 @@
+# COMMAND: bash -lc certbot certificates 2>/dev/null || true
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Found the following certs:
+  Certificate Name: collabora.barye.cloudns.asia
+    Serial Number: 50948762e66c4a58430712c68f32388c8b7
+    Key Type: ECDSA
+    Domains: collabora.barye.cloudns.asia
+    Expiry Date: 2026-12-21 12:52:47+00:00 (VALID: 89 days)
+    Certificate Path: /etc/letsencrypt/live/collabora.barye.cloudns.asia/fullchain.pem
+    Private Key Path: /etc/letsencrypt/live/collabora.barye.cloudns.asia/privkey.pem
+  Certificate Name: nextcloud.barye.cloudns.asia
+    Serial Number: 6f2c77475da36139dc000dda7c25ecffaa7
+    Key Type: ECDSA
+    Domains: nextcloud.barye.cloudns.asia
+    Expiry Date: 2026-12-21 12:46:16+00:00 (VALID: 89 days)
+    Certificate Path: /etc/letsencrypt/live/nextcloud.barye.cloudns.asia/fullchain.pem
+    Private Key Path: /etc/letsencrypt/live/nextcloud.barye.cloudns.asia/privkey.pem
+  Certificate Name: nextcloud.hhc.cloudns.asia
+    Serial Number: 6fc57792f5f99465c7ffe703101ca6e029f
+    Key Type: ECDSA
+    Domains: nextcloud.hhc.cloudns.asia
+    Expiry Date: 2026-12-21 12:52:34+00:00 (VALID: 89 days)
+    Certificate Path: /etc/letsencrypt/live/nextcloud.hhc.cloudns.asia/fullchain.pem
+    Private Key Path: /etc/letsencrypt/live/nextcloud.hhc.cloudns.asia/privkey.pem
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

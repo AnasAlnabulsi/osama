@@ -1,0 +1,13 @@
+# COMMAND: bash -lc command -v sgdisk >/dev/null && sgdisk -p '/dev/sdc'
+Disk /dev/sdc: 1953523712 sectors, 931.5 GiB
+Model: Extreme SSD     
+Sector size (logical/physical): 512/4096 bytes
+Disk identifier (GUID): 65F2DFF6-D48D-4002-BDA8-94D100083882
+Partition table holds up to 128 entries
+Main partition table begins at sector 2 and ends at sector 33
+First usable sector is 34, last usable sector is 1953523678
+Partitions will be aligned on 2048-sector boundaries
+Total free space is 2014 sectors (1007.0 KiB)
+
+Number  Start (sector)    End (sector)  Size       Code  Name
+   1            2048      1953523678   931.5 GiB   8300  

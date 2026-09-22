@@ -1,0 +1,2 @@
+# COMMAND: parted -s /dev/sda unit s print
+./proxmox-full-readonly-inventory.sh: line 14: parted: command not found

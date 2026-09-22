@@ -1,0 +1,10 @@
+# COMMAND: parted -s /dev/sdb unit s print
+Model: QEMU QEMU HARDDISK (scsi)
+Disk /dev/sdb: 1048576000s
+Sector size (logical/physical): 512B/512B
+Partition Table: loop
+Disk Flags: 
+
+Number  Start  End          Size         File system  Flags
+ 1      0s     1048575999s  1048576000s  ext4
+

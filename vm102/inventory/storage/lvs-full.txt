@@ -1,0 +1,3 @@
+# COMMAND: bash -lc lvs -a -o lv_name,lv_uuid,vg_name,lv_size,lv_attr,pool_lv,origin,data_percent,metadata_percent,devices 2>/dev/null
+  LV        LV UUID                                VG        LSize   Attr       Pool Origin Data%  Meta%  Devices     
+  ubuntu-lv uEmJ6J-H3kX-X8r7-lWbM-VoCF-RcVW-s03lSD ubuntu-vg <58,00g -wi-ao----                           /dev/sda3(0)

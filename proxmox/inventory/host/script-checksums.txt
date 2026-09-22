@@ -1,0 +1,3 @@
+aa554efdcb95337710e54b00c01b51b647881002f7df11777619aa96504c5759  /root/update.sh
+c4c9ad8a60bfd7c9d1828e384db6a817d594352a839e445959256fd12ab55364  /root/inventarisiren/vm102-full-readonly-inventory.sh
+6d66d201ccc1837787fb007ea9e259abd036c30cfff33b4c5f333073c9ece34d  /root/inventarisiren/proxmox-full-readonly-inventory.sh

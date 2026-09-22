@@ -1,0 +1,10 @@
+# COMMAND: bash -lc lvs -a -o lv_name,lv_uuid,vg_name,lv_size,lv_attr,pool_lv,origin,data_percent,metadata_percent,devices 2>/dev/null
+  LV                                 LV UUID                                VG  LSize    Attr       Pool Origin        Data%  Meta%  Devices          
+  data                               JHhhWr-5mPT-tTxF-OMhw-QRei-Y20U-zkPaFQ pve <320.10g twi-aotz--                    11.78  0.95   data_tdata(0)    
+  [data_tdata]                       ukgfGK-zKIE-AG8z-bLxP-TORn-5x1E-GNA0GP pve <320.10g Twi-ao----                                  /dev/sda3(26624) 
+  [data_tmeta]                       L3Xlv3-xFeY-nsR2-tteZ-bWzB-uVnj-CULItW pve   <3.27g ewi-ao----                                  /dev/sda3(108569)
+  [lvol0_pmspare]                    1EhgLN-NX03-DLDE-Vvh3-jKVJ-RWRQ-Mdag9q pve   <3.27g ewi-------                                  /dev/sda3(109406)
+  root                               OfYdX6-WinS-KY8R-Z3t8-F39L-tnke-610Y0f pve   96.00g -wi-ao----                                  /dev/sda3(2048)  
+  snap_vm-102-disk-0_vor_prox_update PaMyS1-1Min-Q3Wi-hRcw-e2E2-tNAB-BeDajf pve   60.00g Vri---tz-k data vm-102-disk-0                                
+  swap                               rRewxf-5vLh-aYs1-y8Ox-wl2D-TGli-si2lZD pve    8.00g -wi-ao----                                  /dev/sda3(0)     
+  vm-102-disk-0                      NANzgb-Ojox-KECK-YKE1-dTt6-mmOo-310QT1 pve   60.00g Vwi-aotz-- data               50.62                          

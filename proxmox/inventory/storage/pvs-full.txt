@@ -1,0 +1,7 @@
+# COMMAND: bash -lc pvs -a -o pv_name,pv_uuid,pv_size,pv_free,vg_name,dev_size,pe_start,pe_count,pe_alloc_count 2>/dev/null
+  PV         PV UUID                                PSize    PFree  VG  DevSize 1st PE  PE     Alloc 
+  /dev/sda2                                               0      0      512.00m      0       0      0
+  /dev/sda3  UX72uk-44Tx-QmO2-QtIr-MfxC-iD04-lCcUtD <446.63g 15.99g pve 446.63g   1.00m 114337 110243
+  /dev/sdb1                                               0      0      500.00g      0       0      0
+  /dev/sdb2                                               0      0        1.33t      0       0      0
+  /dev/sdc1                                               0      0      931.51g      0       0      0

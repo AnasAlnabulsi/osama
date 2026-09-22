@@ -1,0 +1,24 @@
+# COMMAND: bash -lc command -v sgdisk >/dev/null && sgdisk -p '/dev/sdb'
+
+***************************************************************
+Found invalid GPT and valid MBR; converting MBR to GPT format
+in memory. 
+***************************************************************
+
+
+Warning! Secondary partition table overlaps the last partition by
+33 blocks!
+You will need to delete this partition or resize it in another utility.
+Disk /dev/sdb: 3907029168 sectors, 1.8 TiB
+Model: Samsung SSD 870 
+Sector size (logical/physical): 512/512 bytes
+Disk identifier (GUID): 99CC1E78-1C96-43CF-801A-2AD31F01ABD8
+Partition table holds up to 128 entries
+Main partition table begins at sector 2 and ends at sector 33
+First usable sector is 34, last usable sector is 3907029134
+Partitions will be aligned on 2048-sector boundaries
+Total free space is 2014 sectors (1007.0 KiB)
+
+Number  Start (sector)    End (sector)  Size       Code  Name
+   1            2048      1048578047   500.0 GiB   8300  Linux filesystem
+   2      1048578048      3907029167   1.3 TiB     8300  Linux filesystem

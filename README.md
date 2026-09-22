@@ -13,3 +13,7 @@ Dieses Verzeichnis bildet den erfassten aktuellen Zustand des Proxmox-Hosts und 
 - `scripts/`: read-only Inventarisierung
 
 Secrets, echte `.env`-Werte, Datenbankdaten und private TLS-Schlüssel sind nicht enthalten.
+
+## Vollständigkeit
+
+Siehe `docs/16-vollstaendigkeitsstatus.md` für den finalen Erfassungsstatus.
